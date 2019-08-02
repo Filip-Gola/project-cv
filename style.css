@@ -4,15 +4,31 @@ body {
   color: white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #121F26;
+}
+
+body header {
+  font-size: 1.3em;
+  text-align: center;
+  padding: 20px;
 }
 
 body i, body img {
   cursor: pointer;
 }
 
+body i:hover, body .nav-icon:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
 body #main-content p, body #main-content table {
   text-align: left;
   font-size: 0.8em;
+}
+
+body #main-content p th, body #main-content p td, body #main-content table th, body #main-content table td {
+  padding: 5px;
 }
 
 body #main-content section {
@@ -78,6 +94,7 @@ body .btn-section #dowload-cv-btn {
 
 body .btn-section #dowload-cv-btn:hover {
   cursor: pointer;
+  background-color: #f7d518;
 }
 
 body aside {
@@ -87,6 +104,7 @@ body aside {
 body nav {
   background-color: black;
   text-align: center;
+  padding: 10px;
 }
 
 body nav .nav-icon {

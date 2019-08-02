@@ -11,14 +11,27 @@ body{
     font-size: 20px;
     color: $fontColor1;
     box-sizing: border-box;
+    background-color: #121F26;
+
+    header{
+        font-size: 1.3em;
+        text-align: center;
+        padding: 20px;
+    }
 
     i,img{
         cursor: pointer;
+    }
+    i:hover, .nav-icon:hover{
+            transform: scale(1.2,1.2);
     }
     #main-content{
         p,table{
             text-align: left;
             font-size: 0.8em;
+            th,td{
+                padding: 5px;
+            }
         }
         
         section{
@@ -72,6 +85,7 @@ body{
         }
         #dowload-cv-btn:hover{
             cursor: pointer;
+            background-color: #f7d518;
         }
     }
     aside{
@@ -80,6 +94,7 @@ body{
     nav{
         background-color: $nav-backg-color;
         text-align: center;
+        padding: 10px;
         .nav-icon{
             position: relative;
             // cursor: pointer;
