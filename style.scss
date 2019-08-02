@@ -24,6 +24,29 @@ body{
         section{
             margin-bottom: 5px;
             margin-right: 1px;
+            padding: 15px;
+            .language{
+                font-size: 0.8em;
+                text-align: left;
+                .lang-lvl{
+                    display: flex;
+                    align-items: center;
+                    .lvl-box{
+                        height: 20px;
+                        width:  20px;
+                        border: 1px solid $backg-color2;
+                        margin: 0 5px;
+                        border-radius: 50%;
+                    }
+                    .lvl-acquired{
+                        background-color: $backg-color2;
+                    }
+                    .lang-description{
+                        color: $fontColor2;
+                        font-size: 0.8em;
+                    }
+                }
+            }
         }
         h2{
             color: $fontColor2;

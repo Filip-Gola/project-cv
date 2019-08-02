@@ -18,6 +18,38 @@ body #main-content p, body #main-content table {
 body #main-content section {
   margin-bottom: 5px;
   margin-right: 1px;
+  padding: 15px;
+}
+
+body #main-content section .language {
+  font-size: 0.8em;
+  text-align: left;
+}
+
+body #main-content section .language .lang-lvl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #main-content section .language .lang-lvl .lvl-box {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #1FA184;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+body #main-content section .language .lang-lvl .lvl-acquired {
+  background-color: #1FA184;
+}
+
+body #main-content section .language .lang-lvl .lang-description {
+  color: grey;
+  font-size: 0.8em;
 }
 
 body #main-content h2 {
