@@ -6,8 +6,24 @@ body {
           box-sizing: border-box;
 }
 
-body i {
+body i, body img {
   cursor: pointer;
+}
+
+body #main-content p, body #main-content table {
+  text-align: left;
+  font-size: 0.8em;
+}
+
+body #main-content section {
+  margin-bottom: 5px;
+  margin-right: 1px;
+}
+
+body #main-content h2 {
+  color: grey;
+  font-size: 1.2em;
+  text-align: left;
 }
 
 body section {
@@ -38,6 +54,16 @@ body aside {
 
 body nav {
   background-color: black;
+  text-align: center;
+}
+
+body nav .nav-icon {
+  position: relative;
+  padding: 5px;
+}
+
+body nav .nav-icon img {
+  border-radius: 50%;
 }
 
 body #card {

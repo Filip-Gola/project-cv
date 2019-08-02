@@ -12,8 +12,24 @@ body{
     color: $fontColor1;
     box-sizing: border-box;
 
-    i{
+    i,img{
         cursor: pointer;
+    }
+    #main-content{
+        p,table{
+            text-align: left;
+            font-size: 0.8em;
+        }
+        
+        section{
+            margin-bottom: 5px;
+            margin-right: 1px;
+        }
+        h2{
+            color: $fontColor2;
+            font-size: 1.2em;
+            text-align: left;
+        }
     }
     
     section{
@@ -40,6 +56,15 @@ body{
     }
     nav{
         background-color: $nav-backg-color;
+        text-align: center;
+        .nav-icon{
+            position: relative;
+            // cursor: pointer;
+            padding: 5px;
+            img{
+                border-radius: 50%;
+            }
+        }
     }
     
     #card{
