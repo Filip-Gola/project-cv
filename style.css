@@ -40,6 +40,7 @@ body #main-content section {
 body #main-content section .language {
   font-size: 0.8em;
   text-align: left;
+  padding-top: 28px;
 }
 
 body #main-content section .language .lang-lvl {
@@ -66,6 +67,27 @@ body #main-content section .language .lang-lvl .lvl-acquired {
 body #main-content section .language .lang-lvl .lang-description {
   color: grey;
   font-size: 0.8em;
+}
+
+body #main-content section .skills-section {
+  padding: 5px;
+}
+
+body #main-content section .skills-section .progress-card {
+  font-size: 0.8em;
+  text-align: center;
+  position: relative;
+}
+
+body #main-content section .skills-section .progress-card .progress-animation {
+  position: relative;
+}
+
+body #main-content section .skills-section .progress-card .progress-number {
+  position: absolute;
+  top: 30%;
+  left: 43%;
+  font-size: 0.7em;
 }
 
 body #main-content h2 {

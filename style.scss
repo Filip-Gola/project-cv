@@ -41,6 +41,7 @@ body{
             .language{
                 font-size: 0.8em;
                 text-align: left;
+                padding-top: 28px;
                 .lang-lvl{
                     display: flex;
                     align-items: center;
@@ -57,6 +58,23 @@ body{
                     .lang-description{
                         color: $fontColor2;
                         font-size: 0.8em;
+                    }
+                }
+            }
+            .skills-section{
+                padding: 5px;
+                .progress-card{
+                    font-size: 0.8em;
+                    text-align: center;
+                    position: relative;
+                    .progress-animation{
+                        position: relative;
+                    }
+                    .progress-number{
+                        position: absolute;
+                        top: 30%;
+                        left: 43%;
+                        font-size: 0.7em;
                     }
                 }
             }
