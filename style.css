@@ -1,9 +1,71 @@
 body {
   margin: 0;
+  font-size: 20px;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body i {
+  cursor: pointer;
 }
 
 body section {
-  height: 100px;
-  background-color: bisque;
+  background-color: #313C42;
+  position: relative;
+  text-align: center;
+}
+
+body .btn-section {
+  padding: 15px;
+}
+
+body .btn-section #dowload-cv-btn {
+  background-color: #DEC746;
+  color: black;
+  border-radius: 35px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+body .btn-section #dowload-cv-btn:hover {
+  cursor: pointer;
+}
+
+body aside {
+  background-color: #1FA184;
+}
+
+body nav {
+  background-color: black;
+}
+
+body #card {
+  position: relative;
+  text-align: center;
+  display: block;
+}
+
+body #card div {
+  padding: 10px;
+}
+
+body #card div p {
+  margin: 0;
+}
+
+body #card div i {
+  padding: 0px 10px;
+  font-size: 1.2em;
+}
+
+body #card #card-avatar {
+  position: relative;
+}
+
+body #card #card-avatar img {
+  border-radius: 50%;
+  width: 169px;
+  height: 189px;
 }
 /*# sourceMappingURL=style.css.map */

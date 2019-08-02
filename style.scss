@@ -1,8 +1,71 @@
+$fontColor1: white;
+$fontColor2: grey;
+$backg-color1: #313C42;
+$backg-color2: #1FA184;
+$nav-backg-color: black;
+$btn-background-color: #DEC746;
+
+
 body{
     margin: 0;
+    font-size: 20px;
+    color: $fontColor1;
+    box-sizing: border-box;
+
+    i{
+        cursor: pointer;
+    }
     
     section{
-        height: 100px;
-        background-color: bisque;
+        // height: 100px;
+        background-color: $backg-color1;
+        position: relative;
+        text-align: center;
+    }
+    .btn-section{
+        padding: 15px;
+        #dowload-cv-btn{
+            background-color: $btn-background-color;
+            color: black;
+            border-radius: 35px;
+            width: 70%;
+            margin: 0 auto;
+        }
+        #dowload-cv-btn:hover{
+            cursor: pointer;
+        }
+    }
+    aside{
+        background-color: $backg-color2;
+    }
+    nav{
+        background-color: $nav-backg-color;
+    }
+    
+    #card{
+        position: relative;
+        text-align: center;
+        display: block;
+        // padding: 20px;
+        div{
+            padding: 10px;
+            p{
+                margin: 0;
+            }
+            i{
+                padding: 0px 10px;
+                font-size: 1.2em;
+                
+            }
+        }
+
+        #card-avatar{
+            position: relative;
+            img{
+                border-radius: 50%;
+                width: 169px;
+                height: 189px;
+            }
+        }
     }
 }
