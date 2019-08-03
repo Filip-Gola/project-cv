@@ -5,6 +5,23 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #121F26;
+  position: relative;
+}
+
+body #scroll-btn {
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+  background-color: #1FA184;
+  padding: 2px;
+  width: 35px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+body a {
+  text-decoration: none;
+  color: white;
 }
 
 body header {
@@ -90,6 +107,42 @@ body #main-content section .skills-section .progress-card .progress-number {
   font-size: 0.7em;
 }
 
+body #main-content section .universal-box {
+  text-align: left;
+  padding-top: 10px;
+}
+
+body #main-content section .universal-box h3 {
+  font-size: 1.2em;
+}
+
+body #main-content section .universal-box h4 {
+  color: grey;
+  font-size: 0.9em;
+}
+
+body #main-content section .universal-box .work-info {
+  border-left: 3px solid #1FA184;
+}
+
+body #main-content section .universal-box .work-info .dummy-text {
+  color: #313C42;
+}
+
+body #main-content section .universal-box .time-box {
+  min-width: 30%;
+}
+
+body #main-content section .universal-box .time-box .time-unit {
+  font-size: 0.8em;
+  text-align: center;
+  background-color: #1FA184;
+  padding: 5px;
+  max-width: 70%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
 body #main-content h2 {
   color: grey;
   font-size: 1.2em;
@@ -155,6 +208,10 @@ body #card div p {
 body #card div i {
   padding: 0px 10px;
   font-size: 1.2em;
+}
+
+body #card div p {
+  color: #d0caca;
 }
 
 body #card #card-avatar {

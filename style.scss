@@ -12,6 +12,23 @@ body{
     color: $fontColor1;
     box-sizing: border-box;
     background-color: #121F26;
+    position: relative;
+    
+    #scroll-btn{
+        position: fixed;
+        bottom: 5%;
+        right: 10%;
+        background-color: $backg-color2;
+        padding: 2px;
+        width: 35px;
+        text-align: center;
+        opacity: 0.5;
+    }
+
+    a{
+        text-decoration: none;
+        color: $fontColor1;
+    }
 
     header{
         font-size: 1.3em;
@@ -78,6 +95,35 @@ body{
                     }
                 }
             }
+                .universal-box{
+                    h3{
+                        font-size: 1.2em;
+                    }
+                    h4{
+                        color: $fontColor2;
+                        font-size: 0.9em;
+                    }
+                    text-align: left;
+                    padding-top: 10px;
+                    .work-info{
+                        border-left: 3px solid $backg-color2;
+                        .dummy-text{
+                            color: $backg-color1;
+                        }
+                    }
+                    .time-box{
+                        min-width: 30%;
+                        .time-unit{
+                            font-size: 0.8em;
+                            text-align: center;
+                            background-color: $backg-color2;
+                            padding: 5px;
+                            max-width: 70%;
+                            margin: 0 auto;
+                            border-radius: 15px;
+                        }
+                    }
+                }
         }
         h2{
             color: $fontColor2;
@@ -137,6 +183,9 @@ body{
                 padding: 0px 10px;
                 font-size: 1.2em;
                 
+            }
+            p{
+                color: #d0caca;
             }
         }
 
