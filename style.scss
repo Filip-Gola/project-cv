@@ -73,14 +73,19 @@ body{
         
         section{
             margin-bottom: 6px;
-
             margin-right: 1px;
             padding: 15px;
+            p{
+                text-align: justify;
+            }
+            em{
+                text-align: right;
+            }
             #language-skills{
                 .language{
                     font-size: 0.8em;
                     text-align: left;
-                    padding: 20px;
+                    padding: 10px;
                     .lang-lvl{
                         display: flex;
                         align-items: center;
