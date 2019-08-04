@@ -48,6 +48,11 @@ body a {
   color: white;
 }
 
+body a:hover {
+  text-decoration: none;
+  color: white;
+}
+
 body header {
   font-size: 1.3em;
   text-align: center;

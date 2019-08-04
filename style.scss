@@ -45,6 +45,10 @@ body{
     a{
         text-decoration: none;
         color: $fontColor1;
+        &:hover{
+            text-decoration: none;
+            color:white;
+        }
     }
 
     header{
