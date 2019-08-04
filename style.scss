@@ -32,17 +32,14 @@ body{
     #scroll-btn{
         position: fixed;
         bottom: 5%;
-        right: 10%;
+        right: 10vw;
         background-color: $backg-color2;
         padding: 2px;
         width: 35px;
         text-align: center;
         opacity: 0.5;
         display: none;
-
-        // &.active{
-        //     display: block;
-        // }
+        border-radius: 10px;
     }
 
     a{
@@ -166,6 +163,12 @@ body{
         background-color: $backg-color1;
         position: relative;
         text-align: center;
+        .interests{
+            color: $backg-color2;
+        }
+        .interests-desc{
+            font-size: 0.8em;
+        }
     }
     .btn-section{
         padding: 15px;
@@ -188,6 +191,7 @@ body{
         margin-bottom: 5px;
     }
     nav{
+        position: relative;
         display: none;
         background-color: $nav-backg-color;
         text-align: center;

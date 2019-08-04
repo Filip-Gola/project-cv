@@ -33,13 +33,14 @@ body #navigation-horizontal i {
 body #scroll-btn {
   position: fixed;
   bottom: 5%;
-  right: 10%;
+  right: 10vw;
   background-color: #1FA184;
   padding: 2px;
   width: 35px;
   text-align: center;
   opacity: 0.5;
   display: none;
+  border-radius: 10px;
 }
 
 body a {
@@ -186,6 +187,14 @@ body section {
   text-align: center;
 }
 
+body section .interests {
+  color: #1FA184;
+}
+
+body section .interests-desc {
+  font-size: 0.8em;
+}
+
 body .btn-section {
   padding: 15px;
 }
@@ -210,6 +219,7 @@ body aside {
 }
 
 body nav {
+  position: relative;
   display: none;
   background-color: black;
   text-align: center;
