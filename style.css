@@ -9,23 +9,36 @@ body {
   position: relative;
 }
 
-body .wrapper {
-  margin: 1px;
+body #navigation-horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-body .col* {
-  padding: 0;
+body #navigation-horizontal .nav-icon {
+  padding: 10px 20px;
+}
+
+body #navigation-horizontal i {
+  font-size: 1.5em;
 }
 
 body #scroll-btn {
   position: fixed;
   bottom: 5%;
-  right: 11%;
+  right: 10%;
   background-color: #1FA184;
   padding: 2px;
   width: 35px;
   text-align: center;
   opacity: 0.5;
+  display: none;
 }
 
 body a {
@@ -36,7 +49,7 @@ body a {
 body header {
   font-size: 1.3em;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
 }
 
 body i, body img {
@@ -49,7 +62,7 @@ body i:hover, body .nav-icon:hover {
 }
 
 body #main-content {
-  padding-right: 15px;
+  padding-left: 30px;
 }
 
 body #main-content p, body #main-content table {
@@ -62,17 +75,18 @@ body #main-content p th, body #main-content p td, body #main-content table th, b
 }
 
 body #main-content section {
-  margin: 0px 0px 5px 0px;
+  margin-bottom: 6px;
+  margin-right: 1px;
   padding: 15px;
 }
 
-body #main-content section .language {
+body #main-content section #language-skills .language {
   font-size: 0.8em;
   text-align: left;
-  padding-top: 28px;
+  padding: 20px;
 }
 
-body #main-content section .language .lang-lvl {
+body #main-content section #language-skills .language .lang-lvl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,7 +95,7 @@ body #main-content section .language .lang-lvl {
           align-items: center;
 }
 
-body #main-content section .language .lang-lvl .lvl-box {
+body #main-content section #language-skills .language .lang-lvl .lvl-box {
   height: 20px;
   width: 20px;
   border: 1px solid #1FA184;
@@ -89,17 +103,13 @@ body #main-content section .language .lang-lvl .lvl-box {
   border-radius: 50%;
 }
 
-body #main-content section .language .lang-lvl .lvl-acquired {
+body #main-content section #language-skills .language .lang-lvl .lvl-acquired {
   background-color: #1FA184;
 }
 
-body #main-content section .language .lang-lvl .lang-description {
+body #main-content section #language-skills .language .lang-lvl .lang-description {
   color: grey;
   font-size: 0.8em;
-}
-
-body #main-content section .skills-section {
-  padding: 5px;
 }
 
 body #main-content section .skills-section .progress-card {
@@ -149,7 +159,7 @@ body #main-content section .universal-box .time-box .time-unit {
   font-size: 0.8em;
   text-align: center;
   background-color: #1FA184;
-  padding: 5px;
+  padding: 2px;
   max-width: 70%;
   margin: 0 auto;
   border-radius: 15px;
@@ -158,8 +168,7 @@ body #main-content section .universal-box .time-box .time-unit {
 body #main-content h2 {
   color: grey;
   font-size: 1.2em;
-  text-align: left;
-  padding-left: 5px;
+  text-align: center;
 }
 
 body section {
@@ -178,6 +187,7 @@ body .btn-section #dowload-cv-btn {
   border-radius: 35px;
   width: 70%;
   margin: 0 auto;
+  padding: 5px;
 }
 
 body .btn-section #dowload-cv-btn:hover {
@@ -194,6 +204,7 @@ body nav {
   background-color: black;
   text-align: center;
   padding: 10px 0px;
+  margin-bottom: 5px;
 }
 
 body nav .nav-icon {
@@ -211,14 +222,6 @@ body #card {
   display: block;
 }
 
-body #card div {
-  padding: 10px;
-}
-
-body #card div p {
-  margin: 0;
-}
-
 body #card div i {
   padding: 0px 10px;
   font-size: 1.2em;
@@ -230,11 +233,16 @@ body #card div p {
 
 body #card #card-avatar {
   position: relative;
+  padding: 10px 0;
 }
 
 body #card #card-avatar img {
   border-radius: 50%;
   width: 169px;
   height: 189px;
+}
+
+body #card #card-info {
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */

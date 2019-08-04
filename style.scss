@@ -14,25 +14,34 @@ body{
     box-sizing: border-box;
     background-color: #121F26;
     position: relative;
-
-    .wrapper{
-        margin: 1px;
+    
+    #navigation-horizontal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .nav-icon{
+            padding: 10px 20px;
+        }
+        i{
+            font-size: 1.5em;
+        }
     }
 
-    .col*{
-        padding: 0;
-    }
-   
     
     #scroll-btn{
         position: fixed;
         bottom: 5%;
-        right: 11%;
+        right: 10%;
         background-color: $backg-color2;
         padding: 2px;
         width: 35px;
         text-align: center;
         opacity: 0.5;
+        display: none;
+
+        // &.active{
+        //     display: block;
+        // }
     }
 
     a{
@@ -43,7 +52,7 @@ body{
     header{
         font-size: 1.3em;
         text-align: center;
-        padding: 20px;
+        padding: 15px;
     }
 
     i,img{
@@ -53,6 +62,7 @@ body{
             transform: scale(1.2,1.2);
     }
     #main-content{
+        padding-left: 30px;
         p,table{
             text-align: left;
             font-size: 0.8em;
@@ -60,38 +70,39 @@ body{
                 padding: 5px;
             }
         }
-        padding-right: 15px;
         
         section{
-            margin: 0px 0px 5px 0px;
+            margin-bottom: 6px;
 
-            // margin-right: 1px;
+            margin-right: 1px;
             padding: 15px;
-            .language{
-                font-size: 0.8em;
-                text-align: left;
-                padding-top: 28px;
-                .lang-lvl{
-                    display: flex;
-                    align-items: center;
-                    .lvl-box{
-                        height: 20px;
-                        width:  20px;
-                        border: 1px solid $backg-color2;
-                        margin: 0 5px;
-                        border-radius: 50%;
-                    }
-                    .lvl-acquired{
-                        background-color: $backg-color2;
-                    }
-                    .lang-description{
-                        color: $fontColor2;
-                        font-size: 0.8em;
+            #language-skills{
+                .language{
+                    font-size: 0.8em;
+                    text-align: left;
+                    padding: 20px;
+                    .lang-lvl{
+                        display: flex;
+                        align-items: center;
+                        .lvl-box{
+                            height: 20px;
+                            width:  20px;
+                            border: 1px solid $backg-color2;
+                            margin: 0 5px;
+                            border-radius: 50%;
+                        }
+                        .lvl-acquired{
+                            background-color: $backg-color2;
+                        }
+                        .lang-description{
+                            color: $fontColor2;
+                            font-size: 0.8em;
+                        }
                     }
                 }
             }
             .skills-section{
-                padding: 5px;
+                // padding: 5px;
                 .progress-card{
                     font-size: 0.8em;
                     text-align: center;
@@ -129,7 +140,7 @@ body{
                             font-size: 0.8em;
                             text-align: center;
                             background-color: $backg-color2;
-                            padding: 5px;
+                            padding: 2px;
                             max-width: 70%;
                             margin: 0 auto;
                             border-radius: 15px;
@@ -140,13 +151,12 @@ body{
         h2{
             color: $fontColor2;
             font-size: 1.2em;
-            text-align: left;
-            padding-left: 5px;
+            text-align: center;
+            
         }
     }
     
     section{
-        // height: 100px;
         background-color: $backg-color1;
         position: relative;
         text-align: center;
@@ -159,6 +169,8 @@ body{
             border-radius: 35px;
             width: 70%;
             margin: 0 auto;
+            padding: 5px;
+
         }
         #dowload-cv-btn:hover{
             cursor: pointer;
@@ -173,14 +185,15 @@ body{
         background-color: $nav-backg-color;
         text-align: center;
         padding: 10px 0px;
+        margin-bottom: 5px;
         .nav-icon{
             position: relative;
-            // cursor: pointer;
             padding: 5px;
+            
             img{
                 border-radius: 50%;
             }
-        }
+        }   
     }
     
     #card{
@@ -188,10 +201,7 @@ body{
         text-align: center;
         display: block;
         div{
-            padding: 10px;
-            p{
-                margin: 0;
-            }
+            // padding: 10px;
             i{
                 padding: 0px 10px;
                 font-size: 1.2em;
@@ -204,11 +214,16 @@ body{
 
         #card-avatar{
             position: relative;
+            padding: 10px 0;
             img{
                 border-radius: 50%;
                 width: 169px;
                 height: 189px;
             }
         }
+        #card-info{
+            padding-bottom: 10px;
+        }
     }
+
 }
