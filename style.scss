@@ -16,6 +16,7 @@ body{
     position: relative;
     
     #navigation-horizontal{
+        display: none;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -187,6 +188,7 @@ body{
         margin-bottom: 5px;
     }
     nav{
+        display: none;
         background-color: $nav-backg-color;
         text-align: center;
         padding: 10px 0px;

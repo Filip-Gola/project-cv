@@ -10,6 +10,7 @@ body {
 }
 
 body #navigation-horizontal {
+  display: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,6 +210,7 @@ body aside {
 }
 
 body nav {
+  display: none;
   background-color: black;
   text-align: center;
   padding: 10px 0px;
