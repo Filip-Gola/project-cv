@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-size: 20px;
   color: white;
   -webkit-box-sizing: border-box;
@@ -8,10 +9,18 @@ body {
   position: relative;
 }
 
+body .wrapper {
+  margin: 1px;
+}
+
+body .col* {
+  padding: 0;
+}
+
 body #scroll-btn {
   position: fixed;
   bottom: 5%;
-  right: 10%;
+  right: 11%;
   background-color: #1FA184;
   padding: 2px;
   width: 35px;
@@ -39,6 +48,10 @@ body i:hover, body .nav-icon:hover {
           transform: scale(1.2, 1.2);
 }
 
+body #main-content {
+  padding-right: 15px;
+}
+
 body #main-content p, body #main-content table {
   text-align: left;
   font-size: 0.8em;
@@ -49,8 +62,7 @@ body #main-content p th, body #main-content p td, body #main-content table th, b
 }
 
 body #main-content section {
-  margin-bottom: 5px;
-  margin-right: 1px;
+  margin: 0px 0px 5px 0px;
   padding: 15px;
 }
 
@@ -147,6 +159,7 @@ body #main-content h2 {
   color: grey;
   font-size: 1.2em;
   text-align: left;
+  padding-left: 5px;
 }
 
 body section {
@@ -174,12 +187,13 @@ body .btn-section #dowload-cv-btn:hover {
 
 body aside {
   background-color: #1FA184;
+  margin-bottom: 5px;
 }
 
 body nav {
   background-color: black;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0px;
 }
 
 body nav .nav-icon {

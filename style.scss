@@ -8,16 +8,26 @@ $btn-background-color: #DEC746;
 
 body{
     margin: 0;
+    padding: 0;
     font-size: 20px;
     color: $fontColor1;
     box-sizing: border-box;
     background-color: #121F26;
     position: relative;
+
+    .wrapper{
+        margin: 1px;
+    }
+
+    .col*{
+        padding: 0;
+    }
+   
     
     #scroll-btn{
         position: fixed;
         bottom: 5%;
-        right: 10%;
+        right: 11%;
         background-color: $backg-color2;
         padding: 2px;
         width: 35px;
@@ -50,10 +60,12 @@ body{
                 padding: 5px;
             }
         }
+        padding-right: 15px;
         
         section{
-            margin-bottom: 5px;
-            margin-right: 1px;
+            margin: 0px 0px 5px 0px;
+
+            // margin-right: 1px;
             padding: 15px;
             .language{
                 font-size: 0.8em;
@@ -129,6 +141,7 @@ body{
             color: $fontColor2;
             font-size: 1.2em;
             text-align: left;
+            padding-left: 5px;
         }
     }
     
@@ -154,11 +167,12 @@ body{
     }
     aside{
         background-color: $backg-color2;
+        margin-bottom: 5px;
     }
     nav{
         background-color: $nav-backg-color;
         text-align: center;
-        padding: 10px;
+        padding: 10px 0px;
         .nav-icon{
             position: relative;
             // cursor: pointer;
@@ -173,7 +187,6 @@ body{
         position: relative;
         text-align: center;
         display: block;
-        // padding: 20px;
         div{
             padding: 10px;
             p{
